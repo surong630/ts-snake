@@ -15,7 +15,9 @@ module.exports = {
     filename: 'bundle.js',
     // 告诉webpack不使用箭头函数
     environment: {
-      arrowFunction: false
+      arrowFunction: false,
+      // 告诉webpack不使用const
+      const: false
     }
   },
   // 指定webpack打包时使用模块
@@ -94,6 +96,6 @@ module.exports = {
   ],
   // 用来设置引用模块
   resolve: {
-    extensions: ['.ts', 'js']
+    extensions: ['.ts', '.js']
   }
 }
