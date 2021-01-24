@@ -23,7 +23,6 @@ class Food{
     let right =  Math.round(Math.random() * 29) *10
     this.element.style.left = left + 'px';
     this.element.style.top = right + 'px';
-
   }
 }
 export default Food

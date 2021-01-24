@@ -6,7 +6,7 @@ class Snake{
   // 获取蛇的容器
   element: HTMLElement
   constructor() {
-    this.element = document.getElementById('snake')
+    this.element = document.getElementById('snake')!
     // 表示头部
     this.head = document.querySelector('#snake > div') as HTMLElement
     // 表示身体
@@ -33,3 +33,4 @@ class Snake{
     this.element.insertAdjacentHTML('beforeend','<div></div>')
   }
 }
+export default Snake
