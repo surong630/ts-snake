@@ -35,7 +35,7 @@ class GameControl {
     // 修改direction属性
     this.direction = event.key
     console.log(this.direction);
-      // 瞎写
+      // 这里判断方向
     if(this.direction === 'ArrowRight') {
       this.snake.head.style.left = this.n + 'px';
       this.n += 1
